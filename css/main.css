@@ -1,0 +1,105 @@
+            /* TASK ONE */
+            .div.tone{
+                width: 300px;
+                height: 60px;
+                margin: 30px auto;
+                text-align: center;
+                font-size: 2em;
+                background-color: aquamarine;
+            }
+            .div.tone:empty{
+                background-color: red;
+            }
+            /* TSAK ONE  */
+
+            /* TASK TWO */
+            .div.ttwo{
+                width: 400px;
+                height: 50px;
+                background-color: #d4d4d4;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 100px auto;
+                text-align: center;
+                position: relative;
+                padding-top: 32px;
+                
+            }
+            .div.ttwo::first-letter{
+                content: "";
+                background-color: red;
+                color: white;
+                font-weight: bold;
+                position: absolute;
+                padding: 23px 15px;
+                margin: 121px 10px 3px -120px;
+            }
+            /* TASK TWO */
+
+            /* TASK THREE */
+            .tthree{
+                background-color: #dddddd;
+                width: 350px;
+                padding: 12px;
+                margin: 20px auto ;
+                position: relative;
+                border-left: 4px #e91e63 solid; 
+            }
+            
+            .tthree::before{
+                content: attr(data-person);
+                background-color: rgb(158, 158, 158);
+                text-align: center;
+                padding: 7px;
+                position: absolute;
+                width: 60px;
+                left: -109px;
+                top: 5px;
+            }
+            .tthree::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent #e91e63 transparent transparent;
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                margin-top: -10px;
+            }
+            /* TASK THREE */
+
+            /* TASK FOUR */
+            .tfour{
+                background-color: rgb(158, 158, 158);
+                font-family: Arial, Helvetica, sans-serif;
+                width: 300px;
+                height: 25px;
+                margin: 10px auto;
+                padding: 10px;
+                position: relative;
+                counter-increment: members-counter;
+            }
+            .tfour::before{
+                content: counter(members-counter);
+                text-align: center;
+                background-color: red;
+                color: white;
+                font-weight: bold;
+                width: 25px;
+                height: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 0px;
+                left: -45px;
+            }
+            .tfour::after{
+                content: "";
+                width: 4px;
+                height: 100%;
+                background-color: red;
+                position: absolute;
+                top: 0px;
+                right: -4px;
+            } 
+            /* TASK FOUR */
